@@ -14,6 +14,7 @@ flood_param = URI.encode_www_form({'name'=>'FLOOD','comment' =>'FROM RUBY','cat'
 
 replace the sendmsg_confirmation.php page with the page retrieved from the 'action' html tag of the comment or post submission form
 http.post("/sendmsg_confirmation.php",flood_param, 'cookie'=>session_id) 
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 register on the platform with a test account and insert the credentials in the command together with the number of comments to be flooded identified by
