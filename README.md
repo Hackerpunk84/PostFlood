@@ -4,15 +4,20 @@ PostFlood is a simple script written in ruby ​​that allows you to access, fo
 use the browser inspector to retrieve the tag names
 
 1) open the PostFlood.rb file and replace the 'user' and 'pass' parameters with those retrieved from the login.php form html tags
+
 login_param = URI.encode_www_form({'user'=>Username,'pass'=>Password})
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 
+
 2)replace or add html tags: 'name' ,'comment', 'cat' with those retrieved from the input form to comment or write a post
+
 flood_param = URI.encode_www_form({'name'=>'FLOOD','comment' =>'FROM RUBY','cat' =>'1'})
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
 replace the sendmsg_confirmation.php page with the page retrieved from the 'action' html tag of the comment or post submission form
+
 http.post("/sendmsg_confirmation.php",flood_param, 'cookie'=>session_id) 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
