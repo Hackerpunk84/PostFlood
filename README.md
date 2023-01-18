@@ -26,6 +26,6 @@ http.post("/sendmsg_confirmation.php",flood_param, 'cookie'=>session_id)
 register on the platform with a test account and insert the credentials in the command together with the number of comments to be flooded identified by
 start the script with the command:
 
-$ruby PostFlood <host.com> <username> <password> <int>
+## $ruby PostFlood <host.com> <username> <password> <int>
 
 the script is being improved. Collaborations are welcome to extend its function. thank you
